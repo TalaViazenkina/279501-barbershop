@@ -10,9 +10,172 @@ body {
 h1 {
 	font-size: 30px;
 	line-height: 42px;
+	margin: 0;
 }
 
 h2 {
 	font-size: 24px;
 	line-height: 30px;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.main-header {
+	
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	
+}
+.main-header a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-around;
+	width: 700px;
+	list-style: none;
+}
+
+.main-navigation li {
+	padding: 10px 0;
+}
+
+.user-block {
+	width: 100px;
+	padding: 10px 0;
+}
+
+/*main*/
+
+main {
+	padding-top: 55px;
+	padding-bottom: 50px;
+	background: url("../img/content-background.jpg") #f8f5f2;
+}
+
+main a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*не знаю, насколько я правильно поступила с отрицательным маржином,
+ но второй вариант получался со слишком большой вложенностью:
+.breadcrumbs li:first-child a {padding-left: 0;};
+ */
+.breadcrumbs {
+	margin-left: -10px;
+}
+
+.breadcrumbs li {
+display: inline-block;
+}
+
+.breadcrumbs a {
+	display: block;
+	padding: 10px;
+}
+
+
+aside {
+	width: 220px;
+}
+
+aside label {
+	display: block;
+}
+
+aside label:last-child{
+	margin-bottom: 50px;
+}
+
+.results {
+	width: 700px;
+}
+.products-item {
+	width: 220px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+}
+
+h1 a{
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: none;
+
+
+}
+
+
+.products-paginator li {
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.products-paginator a {
+	display: block;
+	width: 43px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+
+}
+
+.products-paginator .current {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/*footer*/
+
+.main-footer {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	color: #ffffff;
+	background: url("../img/footer-background.jpg") #323232;
+
+}
+
+.main-footer a {
+	color: #ffffff;
+}
+
+.main-footer p {
+	margin-top: 0;
+}
+
+/*catalog-item*/
+
+.photos {
+	width: 460px;
+	padding-left: 10px;
+}
+.photos img:first-child {
+	margin-bottom: 20px;
+}
+
+.product-description {
+	width: 390px;
 }
